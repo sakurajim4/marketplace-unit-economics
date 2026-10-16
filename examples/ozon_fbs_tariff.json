@@ -1,0 +1,11 @@
+{
+  "name": "Ozon FBS · своя категория",
+  "as_of": "2026-08-28",
+  "commission_pct": [[100, 17], [300, 23], [null, 49]],
+  "logistics": [[300, 32], [null, 100]],
+  "last_mile_pct": 20,
+  "last_mile_max": 25,
+  "acquiring_pct": 1,
+  "fixed_fee": 0,
+  "note": "Подставьте ставки своей категории, объёма и кластеров из кабинета."
+}

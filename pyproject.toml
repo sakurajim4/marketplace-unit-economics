@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "marketplace-unit-economics"
+version = "0.1.0"
+description = "Юнит-экономика Ozon/WB: комиссия по ценовым полкам, логистика, налог, ДРР, возвраты, цена под целевую маржу"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "sakurajim4" }]
+keywords = ["ozon", "wildberries", "marketplace", "unit-economics", "pricing"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Natural Language :: Russian",
+  "Topic :: Office/Business :: Financial",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+mpue = "marketplace_unit_economics.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/sakurajim4/marketplace-unit-economics"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/marketplace_unit_economics"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
